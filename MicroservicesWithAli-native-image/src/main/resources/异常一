@@ -1,0 +1,148 @@
+Windows PowerShell
+版权所有（C） Microsoft Corporation。保留所有权利。
+
+安装最新的 PowerShell，了解新功能和改进！https://aka.ms/PSWindows
+
+PS E:\gaoap_home\2023\MicroservicesWithAli> cd .\MicroservicesWithAli-native-image\
+PS E:\gaoap_home\2023\MicroservicesWithAli\MicroservicesWithAli-native-image> mvn -Pnative native:compile
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ---------< com.gaoap.image:MicroservicesWithAli-native-image >----------
+[INFO] Building MicroservicesWithAli-native-image 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] >>> native:0.9.21:compile (default-cli) > package @ MicroservicesWithAli-native-image >>>
+[INFO]
+[INFO] --- native:0.9.21:add-reachability-metadata (add-reachability-metadata) @ MicroservicesWithAli-native-image ---
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-classic:1.4.7]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-classic:1.4.7]: Configuration directory is ch.qos.logback\logback-classic\1.4.1
+[INFO] [graalvm reachability metadata repository for org.apache.tomcat.embed:tomcat-embed-core:10.1.8]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.apache.tomcat.embed:tomcat-embed-core:10.1.8]: Configuration directory is org.apache.tomcat.embed\tomcat-embed-core\10.0.20
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ MicroservicesWithAli-native-image ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO]
+[INFO] --- compiler:3.10.1:compile (default-compile) @ MicroservicesWithAli-native-image ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ MicroservicesWithAli-native-image ---
+[INFO] skip non existing resourceDirectory E:\gaoap_home\2023\MicroservicesWithAli\MicroservicesWithAli-native-image\src\test\resources
+[INFO]
+[INFO] --- compiler:3.10.1:testCompile (default-testCompile) @ MicroservicesWithAli-native-image ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO]
+[INFO] --- surefire:2.22.2:test (default-test) @ MicroservicesWithAli-native-image ---
+[WARNING] Parameter 'localRepository' is deprecated core expression; Avoid use of ArtifactRepository type. If you need access to local repository, switch to '${repositorySystemSession}
+' expression and get LRM from it instead.
+[WARNING] Parameter 'systemProperties' is deprecated: Use systemPropertyVariables instead.
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.gaoap.image.nativeimage.NativeImageApplicationTests
+16:25:08.208 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Neither @ContextConfiguration nor @ContextHierarchy found for test class [NativeIma
+geApplicationTests]: using SpringBootContextLoader
+16:25:08.212 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader -- Could not detect default resource locations for test class [com.gaoap.image.nativeimage.Nati
+veImageApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:25:08.213 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.gaoap.image.n
+ativeimage.NativeImageApplicationTests]: NativeImageApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:25:08.244 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using ContextCustomizers for test class [NativeImageApplicationTests]: [ExcludeFilt
+erContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer, DisableObservabilityContextCustomizer, PropertyMappingContextCus
+tomizer, Customizer]
+16:25:08.318 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider -- Identified candidate component class: file [E:\gaoap_home\2023\Microserv
+icesWithAli\MicroservicesWithAli-native-image\target\classes\com\gaoap\image\nativeimage\NativeImageApplication.class]
+16:25:08.321 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.gaoap.image.nativeimage.NativeImageApplication fo
+r test class com.gaoap.image.nativeimage.NativeImageApplicationTests
+16:25:08.417 [main] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils -- Skipping candidate TestExecutionListener [org.springframework.test.context.transactio
+n.TransactionalTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dep
+endencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+16:25:08.418 [main] DEBUG org.springframework.test.context.util.TestContextSpringFactoriesUtils -- Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlSc
+riptsTestExecutionListener] due to a missing dependency. Specify custom TestExecutionListener classes or make the default TestExecutionListener classes and their required dependencies
+available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+16:25:08.420 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Using TestExecutionListeners for test class [NativeImageApplicationTests]: [Servlet
+TestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, D
+irtiesContextTestExecutionListener, EventPublishingTestExecutionListener, ResetMocksTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListene
+r, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener]
+16:25:08.422 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener -- Before test class: class [NativeImageApplicationTests], class annotate
+d with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.6)
+
+2023-05-05T16:25:08.707+08:00  INFO 13144 --- [           main] c.g.i.n.NativeImageApplicationTests      : Starting NativeImageApplicationTests using Java 17.0.7 with PID 13144 (starte
+d by gaoyd in E:\gaoap_home\2023\MicroservicesWithAli\MicroservicesWithAli-native-image)
+2023-05-05T16:25:08.709+08:00  INFO 13144 --- [           main] c.g.i.n.NativeImageApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2023-05-05T16:25:09.758+08:00  INFO 13144 --- [           main] c.g.i.n.NativeImageApplicationTests      : Started NativeImageApplicationTests in 1.29 seconds (process running for 2.22
+7)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.122 s - in com.gaoap.image.nativeimage.NativeImageApplicationTests
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO]
+[INFO] --- spring-boot:3.0.6:process-aot (process-aot) @ MicroservicesWithAli-native-image ---
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.6)
+
+2023-05-05T16:25:11.867+08:00  INFO 18128 --- [           main] c.g.i.n.NativeImageApplication           : Starting NativeImageApplication using Java 17.0.7 with PID 18128 (E:\gaoap_ho
+me\2023\MicroservicesWithAli\MicroservicesWithAli-native-image\target\classes started by gaoyd in E:\gaoap_home\2023\MicroservicesWithAli\MicroservicesWithAli-native-image)
+2023-05-05T16:25:11.873+08:00  INFO 18128 --- [           main] c.g.i.n.NativeImageApplication           : No active profile set, falling back to 1 default profile: "default"
+[INFO]
+[INFO] --- jar:3.3.0:jar (default-jar) @ MicroservicesWithAli-native-image ---
+[INFO] Building jar: E:\gaoap_home\2023\MicroservicesWithAli\MicroservicesWithAli-native-image\target\MicroservicesWithAli-native-image-0.0.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- spring-boot:3.0.6:repackage (repackage) @ MicroservicesWithAli-native-image ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO]
+[INFO] <<< native:0.9.21:compile (default-cli) < package @ MicroservicesWithAli-native-image <<<
+[INFO]
+[INFO]
+[INFO] --- native:0.9.21:compile (default-cli) @ MicroservicesWithAli-native-image ---
+[INFO] Found GraalVM installation from GRAALVM_HOME variable.
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-classic:1.4.7]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for ch.qos.logback:logback-classic:1.4.7]: Configuration directory is ch.qos.logback\logback-classic\1.4.1
+[INFO] [graalvm reachability metadata repository for org.apache.tomcat.embed:tomcat-embed-core:10.1.8]: Configuration directory not found. Trying latest version.
+[INFO] [graalvm reachability metadata repository for org.apache.tomcat.embed:tomcat-embed-core:10.1.8]: Configuration directory is org.apache.tomcat.embed\tomcat-embed-core\10.0.20
+[INFO] Executing: D:\Program Files\Java\graalvm-ce-java17-22.3.2\bin\native-image.cmd @target\tmp\native-image-8222067172674174044.args
+========================================================================================================================
+GraalVM Native Image: Generating 'MicroservicesWithAli-native-image' (executable)...
+========================================================================================================================
+
+[1/7] Initializing...                                                                                    (0.0s @ 0.25GB)
+Error: Default native-compiler executable 'cl.exe' not found via environment variable PATH
+Error: To prevent native-toolchain checking provide command-line option -H:-CheckToolchain
+Error: Use -H:+ReportExceptionStackTraces to print stacktrace of underlying exception
+------------------------------------------------------------------------------------------------------------------------
+                         0.2s (2.3% of total time) in 9 GCs | Peak RSS: 0.67GB | CPU load: 0.53
+========================================================================================================================
+Failed generating 'MicroservicesWithAli-native-image' after 6.2s.
+Error: Image build request failed with exit status 1
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17.719 s
+[INFO] Finished at: 2023-05-05T16:25:23+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.graalvm.buildtools:native-maven-plugin:0.9.21:compile (default-cli) on project MicroservicesWithAli-native-image: Execution of D:\Program Files\Java\
+graalvm-ce-java17-22.3.2\bin\native-image.cmd @target\tmp\native-image-8222067172674174044.args returned non-zero result -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+PS E:\gaoap_home\2023\MicroservicesWithAli\MicroservicesWithAli-native-image>

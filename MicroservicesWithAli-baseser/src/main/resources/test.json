@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "code": 0,
+  "msg": "success",
+  "data": [
+    {
+      "id": 8,
+      "app": "nacos-service",
+      "ip": "192.168.31.170",
+      "port": 8721,
+      "resource": "GET:http://nacos-service-baseser/break/test1/{type}",
+      "limitApp": "default",
+      "count": 2.0,
+      "timeWindow": 120,
+      "grade": 2,
+      "minRequestAmount": 3,
+      "slowRatioThreshold": 1.0,
+      "statIntervalMs": 6000,
+      "gmtCreate": null,
+      "gmtModified": null
+    }
+  ]
+}
